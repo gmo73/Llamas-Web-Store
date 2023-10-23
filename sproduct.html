@@ -76,6 +76,76 @@
         </span>
       </div>
  </section>
+ <section id="product1" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>New Modern Designs</p>
+
+    <div class="pro-container">
+      <div class="pro">
+        <img src="products/n1.jpg" alt="">
+        <div class ="des">
+            <span>Custom Shirts</span>
+            <h5>Loteria Shirts</h5>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$20.00</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart" style="color: #e011e4;"></i></a>
+       </div>
+
+       <div class="pro">
+        <img src="products/n2.jpg" alt="">
+        <div class ="des">
+            <span>Custom Shirts</span>
+            <h5>Loteria Shirts</h5>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$20.00</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart" style="color: #e011e4;"></i></a>
+       </div>
+
+       <div class="pro">
+        <img src="products/n3.jpg" alt="">
+         <div class ="des">
+            <span>Custom Shirts</span>
+            <h5>Loteria Shirts</h5>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$20.00</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart" style="color: #e011e4;"></i></a>
+       </div>
+
+       <div class="pro">
+        <img src="products/n4.jpg" alt="">
+        <div class ="des">
+            <span>Custom Shirts</span>
+            <h5>Loteria Shirts</h5>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$20.00</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart" style="color: #e011e4;"></i></a>
+       </div>
+    </div>
+</section>
   
 <section id="newsletter" class="section-p1 section-m1">
     <div class="newstext">
@@ -135,6 +205,27 @@
 
        
 </footer>
+<script>
+    var MainImg = document.getElementById('MainImg');
+    var smallImg = document.getElementsByClassName('small-img');
+
+    smallImg[0].onclick = function()
+    {
+        MainImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function()
+    {
+        MainImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function()
+    {
+        MainImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function()
+    {
+        MainImg.src = smallImg[3].src;
+    }
+</script>
 
 <script src="index.js"></script>
 </body>
