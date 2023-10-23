@@ -88,7 +88,7 @@ body {
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #088178;
+    color: black;
 }
 
 #navbar li a.active::after,
@@ -96,20 +96,31 @@ body {
     content: "";
     width: 50%;
     height: 2px;
-    background: #088178;
+    background: hotpink;
     position: absolute;
     bottom: -4px;
     left: 20px;
 }
 
+#mobile {
+    display:none;
+    align-items: center;
+}
+
+
+#close {
+    display: none;
+}
+    
+
 /* Home Page */
 
 #hero {
     background-image:url("Subject.png");
-    background-color: rgb(9, 8, 8);
+    background-color: lightpink;
     height: 90vh;
     width: 100%;
-    background-position: top 23% right 20%;
+    background-position: top 23% right 10%;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
@@ -119,7 +130,7 @@ body {
 }
 
 #hero h2{
-    color: #465b52;
+    color: white;
     }
 
 
@@ -128,18 +139,25 @@ body {
 }
 
 #hero h1 {
-    color: pink;
+    color: white;
 }
 
 #hero h4{
     font-family:'Gill Sans';
-    color: #a5adaa;
+    color: white;
+    font-size: 30px;
+    }
+
+#hero p{
+    color: white;
+    font-size: 16px;
+    padding-bottom: 20px;
 }
 
 #hero button {
     margin: 0;
-    background-color: hotpink;
-    box-shadow: 0 5px 15px lightblue;
+    background-color: white;
+    box-shadow: 0 5px 15px black;
     color: black;
     border: 0;
     border-radius: 17px;
@@ -210,21 +228,25 @@ body {
 }
 
 #product1 .pro .des span{
-    color:#606063;
+    color: black;
     font-size: 12px;
+    font-weight: 700;
     
 }
 
 #product1 .pro .des h5{
     padding-top: 7px;
-    color: white;
+    color: black;
     font-size: 14px;
 }
 
 #product1 .pro .des i{
     font-size: 12px;
-    color: red;
+    color: yellow;
+    
+    
 }
+
 
 
 
@@ -240,7 +262,7 @@ body {
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
-    color: #088178;
+    color: black;
 }
 
 #product1 .pro .cart{
@@ -291,7 +313,7 @@ body {
 button.normal{
     font-size: 14px;
     font-weight: 600;
-    padding: 15px 30px;
+    padding: 15px 20px;
     color: #000;
     background-color: #fff;
     border-radius: 4px;
@@ -303,7 +325,7 @@ button.normal{
 }
 
 #banner button.normal:hover{
-    background-color: #088178;
+    background-color: hotpink;
     color: #fff;
 }
 
@@ -315,7 +337,7 @@ button.normal{
     background-image: url("lowerbanner.png");
     background-repeat: no-repeat;
     background-position: 20% 30%;
-    padding: 40px 80px;
+    padding: 40px 10px;
     background-size: cover;
     
   
@@ -431,3 +453,232 @@ footer .copyright{
 
 }
 
+/*shop Page*/
+
+#page-header{
+    background-image: url("products/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+#page-header h2,p{
+    color: #fff;
+     }
+
+#pagination{
+  text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: hotpink;
+    padding: 15px 20px;
+    border-radius: white;
+    font-weight: 600;
+
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: hotpink;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-weight: 16px;
+    font-weight: 600;
+
+}
+
+/* single product page */
+#prodetails{
+    display:flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 40px;
+}
+#prodetails .single-pro-details h4{
+     padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#prodetails .single-pro-details input{
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#prodetails .single-pro-detailsinput:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: hotpink;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+
+/* Media Queries */
+ @media(max-width:799px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;   
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display:flex;
+        align-items: center;
+    }
+    
+    #mobile i{
+        color: hotpink;
+        font-size: 24px;
+        padding-left: 20px;    }
+
+    #close {
+        display: initial;
+        position:absolute;
+        top: 30px;
+        left:30px;
+        color:#222;
+        font-size: 24px;   }
+
+    #lg-bag{
+        display: none;
+    }
+
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #newsletter .form{
+       width: 70%;
+    }
+}
+
+@media(max-width:477px){
+    #header{
+        padding: 10px 30px;
+    }
+
+    h2{
+        font-size:18px
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+    #hero{
+      
+        padding: 0 20px;
+        background-position: 55%;
+     
+    }
+
+    #hero img{
+        height: 30vh;
+    }
+    
+    #product1 .pro{
+        width: 100%;
+        
+
+    }
+
+    #banner{
+        height:25vh;
+    }
+
+    #newsletter .form{
+        width: 100%;
+    }
+
+    #newsletter{
+        padding: 40px 20px;
+    }
+
+    footer .copyright{
+        text-align: center;
+    }
+}
